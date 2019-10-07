@@ -1,6 +1,6 @@
 /*
  * Plugin Name: Vanilla-JS Magnet
- * Version: 0.1.0
+ * Version: 0.1.1
  * Plugin URL: https://github.com/JavaScriptUtilities/vanillaMagnet
  * JavaScriptUtilities Vanilla-JS Magnet may be freely distributed under the MIT license.
  */
@@ -24,6 +24,13 @@ var vanillaMagnet = function($wrapper, $inner, $item, _args) {
     }
     document.addEventListener('resize', setBound);
     setBound();
+
+    /* Change values at scroll */
+    var timeoutScroll;
+    window.addEventListener('scroll', function() {
+        window.clearTimeout(timeoutScroll);
+        timeoutScroll = setTimeout(setBound, 66);
+    }, false);
 
     /* Prepare elements */
     $item.style.willChange = 'transform';
