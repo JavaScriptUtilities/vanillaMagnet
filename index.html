@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-EN">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Vanilla Magnet</title>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/vanilla-magnet.css" />
+        <script src="js/vanilla-magnet.js"></script>
+    </head>
+    <body>
+        <h1>Vanilla Magnet</h1>
+        <h2>Basic Example</h2>
+        <p>Magnetism starts and stops when entering and exiting the darker area.</p>
+        <div class="wrapper" id="wrapper2">
+            <div class="inner" id="inner2">
+                <div id="bullet2" class="bullet vanilla-magnet__item"></div>
+            </div>
+        </div>
+        <script contenteditable class="script-visible">var $wrapper = document.getElementById('wrapper2'),
+    $item = document.getElementById('bullet2');
+new vanillaMagnet($wrapper, $wrapper, $item, {
+    animDuration:300
+});</script>
+        <h2>Multiple-areas Example</h2>
+        <p>Magnetism starts when entering the darker area, and stops when exiting the clear area.</p>
+        <div class="wrapper" id="wrapper">
+            <div class="inner" id="inner">
+                <div id="bullet" class="bullet vanilla-magnet__item"></div>
+            </div>
+        </div>
+        <script contenteditable class="script-visible">var $wrapper = document.getElementById('wrapper'),
+    $inner = document.getElementById('inner'),
+    $item = document.getElementById('bullet');
+new vanillaMagnet($wrapper, $inner, $item, {
+    animDuration:300
+});</script>
+    </body>
+</html>

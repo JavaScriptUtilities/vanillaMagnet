@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Common
+---------------------------------------------------------- */
+
+/* Demo style
+   ----------------------- */
+
+.script-result {
+    border: 1px solid #f0f0f0;
+    background-color: #fafafa;
+}
+
+.script-result,
+.script-visible {
+    padding: 5px;
+    font-size: 13px;
+}
+
+/* Script style
+   ----------------------- */
+
+.script-visible {
+    display: block;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    font-family: Courier;
+    font-size: 12px;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background-color: #f0f0f0;
+}
+
+.script-visible:focus {
+    outline: 1px solid #ccc;
+}
+
+/* ----------------------------------------------------------
+  Layout
+---------------------------------------------------------- */
+
+.wrapper {
+    display: inline-block;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.inner {
+    padding: 20px;
+    background-color: #c0c0c0;
+}
+
+.bullet {
+    width: 1em;
+    height: 1em;
+    border-radius: 99em;
+    background-color: #C00;
+}

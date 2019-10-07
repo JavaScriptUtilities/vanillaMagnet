@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Base
+---------------------------------------------------------- */
+
+.vanilla-magnet__item {
+    margin: 0;
+    -webkit-transition: all 0.1s ease;
+    overflow: hidden;
+    transition: all 0.1s ease;
+}
+
+[data-magnetism="1"] .vanilla-magnet__item{
+    -webkit-transition: none;
+    transition: none;
+}
